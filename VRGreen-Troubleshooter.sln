@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRGreen-Troubleshooter", "VRGreen-Troubleshooter\VRGreen-Troubleshooter.csproj", "{21376111-2ED2-4732-B32A-6B203BE1F7F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21376111-2ED2-4732-B32A-6B203BE1F7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21376111-2ED2-4732-B32A-6B203BE1F7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21376111-2ED2-4732-B32A-6B203BE1F7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21376111-2ED2-4732-B32A-6B203BE1F7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54669931-7D37-42AF-97B2-429B065901ED}
+	EndGlobalSection
+EndGlobal
