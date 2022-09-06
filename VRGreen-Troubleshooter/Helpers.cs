@@ -115,7 +115,30 @@ namespace VRGreen_Troubleshooter
                     Console.ResetColor();
                 }
             }
-        }
 
+            string registry_key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(registry_key))
+            {
+                foreach (string subkey_name in key.GetSubKeyNames())
+                {
+                    using (RegistryKey subkey = key.OpenSubKey(subkey_name))
+                    {
+                        foreach (var app in apps)
+                        {
+                            try
+                            {
+                                if (subkey.GetValue("DisplayName").ToString().Contains(app))
+                                {
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine($"[CompatibilityChecker]: {app} is detected!");
+                                    Console.ResetColor();
+                                }
+                            }
+                            catch{ }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
