@@ -43,7 +43,7 @@ namespace VRGreen_Troubleshooter
             ManagementObjectCollection data = wmiData.Get();
             foreach (ManagementObject virusChecker in data)
             {
-                var virusCheckerName = virusChecker["displayName"];
+                Console.WriteLine($"[AntiVirusDetection]: {virusChecker["displayName"]}");
             }
         }
 
